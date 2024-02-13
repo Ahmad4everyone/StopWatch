@@ -7,6 +7,7 @@ body{
     background-color: lightcoral;
 }
 .container{
+    margin: 0 auto;
     background-color: slategrey;
     width: 40%;
     min-width: 500px;
@@ -63,4 +64,114 @@ body{
 
 .buttons button:active{
     opacity: 0.5;
+}
+@media(max-width: 768px){
+    body{
+        color: darkblue;
+       
+    }
+    .container{
+        margin: 0 auto;
+        background-color: teal;
+        width: 25%;
+        min-width: 300px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        padding: 10px 0;
+        padding-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px goldenrod;
+        /* margin-left: 200px; */
+    }
+    .display{
+        position: relative;
+        width: 92%;
+        background-color:rgb(52, 224, 138);
+        left: 4%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 30px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        box-shadow: 0 0 16px black;
+    }
+    .buttons{
+        width: 60%;
+        margin: 45px auto 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons button{
+        width: 90px;
+        height: 35px;
+        background-color: black;
+        color: whitesmoke;
+        border: none;
+        font-family: sans-serif;
+        font-size: 12px;
+        border-radius: 8px;
+        outline: none;
+        cursor: pointer;
+    }
+    .buttons button:nth-last-child(2){
+        background-color: goldenrod;
+    }
+}
+
+@media(max-width: 450px){
+    body{
+        color: lavender;
+    }
+    .container{
+        background-color: saddlebrown;
+        width: 20%;
+        min-width: 200px;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        padding: 10px 0;
+        padding-bottom: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px goldenrod;
+        /* margin-left: 200px; */
+    }
+    .display{
+        position: relative;
+        width: 92%;
+        background-color: goldenrod;
+        left: 2%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 20px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 16px;
+        box-shadow: 0 0 8px black;
+    }
+
+    .buttons{
+        width: 45%;
+        margin: 30px auto 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .buttons button{
+        width: 60px;
+        height: 25px;
+        background-color: black;
+        color: whitesmoke;
+        border: none;
+        font-family: sans-serif;
+        font-size: 8px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+    .buttons button:nth-last-child(2){
+        background-color: teal;
+    }
 }
